@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Let's Play Ludo</title>
+    <link rel = "icon" type = "image/jpg" href = "1.JPG">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+   	<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<body>
+	<!-- Creating Locker for A -->
+	<div id="lockera">Locker for A
+		<div class="tm-token1A" style="width: 30px;height: 30px;border-radius: 10px;background-color: #FFC300;display: inline-flex;font-size: 1.4vw;text-align: center; color: black;" onclick= "move1A()" >
+			 1A
+		</div>
+		<div class="tm-token2A" style="width: 30px;height: 30px;border-radius: 10px;background-color: #FFC300;display: inline-flex;font-size: 1.4vw;text-align: center; color: black;" onclick= "move2A()">
+			 2A
+		</div>
+	</div>
+	<!-- Setting up the boxes -->
+	<div class="grid-container">
+		  <div class="grid-item1"  id="1"></div>
+		  <div class="grid-item1"  id="2"></div>
+		  <div class="grid-item1"  id="3"></div>
+		  <div class="grid-item1"  id="4"></div>
+		  <div class="grid-item1"  id="5"></div>
+		  <div class="grid-item1"  id="6"></div>
+		  <div class="grid-item1"  id="7"></div>
+	</div>
+	<div class="grid-container1">
+		  <div class="grid-item1" id="8"></div>
+		  <div class="grid-item1" id="9"></div>
+		  <div class="grid-item1"  id="10"></div>
+		  <div class="grid-item1"  id="11"></div>
+		  <div class="grid-item1" id="12"></div>
+		  <div class="grid-item1"  id="13"></div>
+		  <div class="grid-item"  id="14"></div>
+	</div>
+	<div class="grid-container2">
+		  <div class="grid-item"  id="20"></div>
+		  <div class="grid-item"  id="19"></div>
+		  <div class="grid-item"   id="18"></div>
+		  <div class="grid-item"  id="17"></div>
+		  <div class="grid-item"   id="16"></div>
+		  <div class="grid-item"   id="15"></div>
+		  
+	</div>
+	<div class="grid-container3">
+		  <div class="grid-item"  id="26"></div>
+		  <div class="grid-item"  id="25"></div>
+		  <div class="grid-item"   id="24"></div>
+		  <div class="grid-item"   id="23"></div>
+		  <div class="grid-item"   id="22"></div>
+		  <div class="grid-item"   id="21"></div>
+		  
+	</div>
+	<!-- Creating Locker for B -->
+	<div id="lockerb">Locker for B
+		<div class="tm-token1B" style="width: 30px;height: 30px;border-radius: 10px;background-color: #C70039;display: inline-flex;font-size: 1.4vw;text-align: center; color: #FFC300;" id="initial1B" onclick= "move1B()">
+			1B
+		</div>
+		<div class="tm-token2B" style="width: 30px;height: 30px;border-radius: 10px;background-color: #C70039;display: inline-flex;font-size: 1.4vw;text-align: center; color: #FFC300;" id="initial2B" onclick= "move2B()">
+			2B
+		</div>
+	</div>
+
+	<!-- Creating the Comment Box -->
+	<div id="commentbox"><u>Comment Box
+			<form id="my-form" name="myform" action="#" style="margin-top: 10px;margin-left: 60px;color: white;">
+				<label for="number" name="number" >ENTER NO:</label>
+				<select name="number" style="color: white;font-size: 1.1em;">
+					<option>0</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+
+				</select>
+				
+			</form>
+		<br/></u></div>
+	<div id="roller">
+		<div id ="roller1" style="font-size: .4em;"></div>
+		<div id="rollbox" onclick="dice()">ROLL!</div>
+		<div id="roller2">
+		</div>
+	</div>
+	
+
+
+
+
+
+
+
+
+
+
+
+<script src="ludo.js">
+</script>
+</body>
+</html>
+<style>
