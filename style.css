@@ -2,18 +2,17 @@
 	margin: 0px;
 	padding: 0px;
 	background-color:  #000000;
-
-}
-#myform{
-	font-size: 0.3em;
+	user-select: none; /* supported by Chrome and Opera */
+   	-webkit-user-select: none; /* Safari */
+   	font-family:"SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 #lockera{
 	height:100px;
 	width:200px;
-	background-color: black;
+	background-color:#ff9963;
 	font-size: 1.9vw;
 	font-family: "Comic Sans MS", cursive, sans-serif;
-	color: orange;
+	color:  #600606;
 	text-align: center;
 	margin-left:20px;
 	margin-top: 50px;
@@ -25,10 +24,10 @@
 #lockerb{
 	height:100px;
 	width:200px;
-	background-color: black;
+	background-color:#89f4ef;
 	font-size: 1.9vw;
 	font-family: "Comic Sans MS", cursive, sans-serif;
-	color: orange;
+	color: #051056;
 	text-align: center;
 	margin-left:20px;
 	margin-top: 50px;
@@ -38,7 +37,17 @@
 	left:760px;
 	top:-181px;
 }
-.grid-container{
+.whitebox{
+ 	 border: 2px solid #9e9c9c;
+ 	 border-radius:none;
+ 	 padding: 20px;
+ 	 font-size: 30px;
+ 	 text-align: center;
+ 	 width: 30px;
+ 	 height: 30px;
+ 	 background-color: #ededed;
+}
+.rectbox{
 	display: inline-grid;
 	grid-template-columns:auto auto auto auto auto auto auto ;
 	position: relative;
@@ -47,17 +56,7 @@
 
 
 }
-.grid-item{
- 	 border: 2px solid white;
- 	 border-radius: 10%;
- 	 padding: 20px;
- 	 font-size: 30px;
- 	 text-align: center;
- 	 width: 30px;
- 	 height: 30px;
- 	 background-color: #B59D84;
-}
-.grid-container1{
+.rectbox1{
 	display: inline-grid;
 	grid-template-rows: auto auto auto auto auto auto auto;
 	position: relative;
@@ -65,7 +64,7 @@
 	top:-30px;
 
 }
-.grid-container2{
+.rectbox2{
 	display: inline-grid;
 	position: relative;
 	grid-template-columns:auto auto auto auto auto auto ;
@@ -73,22 +72,22 @@
 	top:413px;
 
 }
-.grid-container3{
+.rectbox3{
 	display: inline-grid;
 	position: relative;
 	grid-template-rows: auto auto auto auto auto auto auto;
 	top:-28px;
 	left:-800px;
 }
-.grid-item1{
- 	 border: 2px solid white;
- 	 border-radius: 10%;
+.whitebox{
+ 	 border: 2px solid #9e9c9c;
+ 	 border-radius: none;
  	 padding: 20px;
  	 font-size: 30px;
  	 text-align: center;
  	 width: 30px;
  	 height: 30px;
- 	 background-color: #B59D84;
+ 	 background-color: #Ededed;
 }
 #commentbox{
 	height:400px;
@@ -150,7 +149,7 @@
 body{
 	overflow: hidden;
 }
-.tm-tokenA{
+.roundtokenA{
 	text-align: center;
 	width: 30px;
 	height: 30px;
@@ -159,8 +158,9 @@ body{
 	display: inline-flex;
 	z-index: 2;
 	color: white;
+	cursor:pointer;
 }
-.tm-tokenB{
+.roundtokenB{
 	text-align: center;
 	width: 30px;
 	height: 30px;
@@ -168,7 +168,8 @@ body{
 	background-color: red;
 	display: inline-flex;
 	z-index: 2;
-	color: white
+	color: white;
+	cursor:pointer;
 }
 #rollbox:hover{
 	background-color: brown;
